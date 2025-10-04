@@ -10,9 +10,10 @@ def convert_temperature(temp, unit):
     elif unit == 'K':
         c = temp - 273.15
         f = (c * 9/5) + 32
-        return {'C':, 'F': f}
+        return {'C': c, 'F': f}
     else:
         return 'Unsupported unit'
+
 
 def main():
     data = [
